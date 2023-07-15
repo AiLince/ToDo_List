@@ -1,0 +1,108 @@
+body {
+    background-color: #000;
+    background-image: url("images/bloknot-s-chistymi-listami-1.webp");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(74, 54, 43);
+    text-shadow: 2px 2px 6px rgb(110, 90, 79);
+    font-size: 1.3vw;
+    padding: 30px;
+    padding-left: 16%;
+}
+
+#scheduler {
+    display: flex;
+    font-size: 1.3vw;
+}
+
+#list {
+    padding-top: 2vw;
+    padding-left: 6.8vw;
+    text-align: center;
+}
+
+#toDo-container {
+    text-align: start;
+    padding-left: 3vw;
+    padding-top: 2vw;
+    max-height: 50vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#toDo-container::-webkit-scrollbar {
+    width: 0;
+    display: none;
+    visibility: hidden;
+}
+
+#clean {
+    margin: 30px;
+    margin-left: 70px;
+}
+
+#task {
+    height: 20px;
+    margin-left: -6.5vw;
+    margin-top: 5.5px;
+    margin-right: -7vw;
+}
+
+#containerTask {
+    border: 1px solid rgba(0, 0, 0, 0.485);
+    border-radius: 5px;
+    margin-left: -3vw;
+    margin-bottom: 1vh;
+    box-shadow:
+    0 1px rgb(94, 72, 59) inset,
+    0 3px 5px rgba(0,1,6,.5),
+    0 0 1px 1px rgba(0,1,6,.2);
+    transition: .2s ease-in-out;
+    font-size: larger;
+    width: 28vw;
+    height: 5vh;
+}
+
+#noTask {
+    color: rgba(74, 54, 43, 0.438);
+    padding: 25px;
+    text-shadow: none;
+}
+
+button, #input {
+    font-size: 1.3vw;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow:
+    0 1px rgb(94, 72, 59) inset,
+    0 3px 5px rgba(0,1,6,.5),
+    0 0 1px 1px rgba(0,1,6,.2);
+    transition: .2s ease-in-out;
+    padding: 5px;
+}
+
+input {
+    width: 20vw;
+    font-family: inherit;
+}
+
+button {
+    background-color: rgb(94, 72, 59);
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(112, 96, 85);
+}
+
+#clean[disabled]{
+    border: 1px solid #999999;
+    background-color: rgb(137, 114, 101);
+    color: #b3b3b3;
+    cursor: default;
+}
