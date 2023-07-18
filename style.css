@@ -52,21 +52,19 @@ body {
 }
 
 #containerTask {
-    border: 1px solid rgba(0, 0, 0, 0.485);
-    border-radius: 5px;
+    font-family: 'Segoe script', cursive;
+    text-decoration: underline;
+    margin-bottom: 9px;
     margin-left: -3vw;
-    margin-bottom: 1vh;
-    box-shadow:
-    0 1px rgb(94, 72, 59) inset,
-    0 3px 5px rgba(0,1,6,.5),
-    0 0 1px 1px rgba(0,1,6,.2);
+    text-shadow: none;
     transition: .2s ease-in-out;
-    font-size: larger;
+    font-size: 1.8vw;
     width: 28vw;
-    height: 5vh;
+    height: fit-content;
 }
 
 #noTask {
+    font-family: 'Segoe script', cursive;
     color: rgba(74, 54, 43, 0.438);
     padding: 25px;
     text-shadow: none;
@@ -86,7 +84,7 @@ button, #input {
 
 input {
     width: 20vw;
-    font-family: inherit;
+    font-family: 'Segoe script', cursive;
 }
 
 button {
@@ -98,6 +96,12 @@ button {
 
 button:hover {
     background-color: rgb(112, 96, 85);
+}
+
+#clean {
+    position: fixed;
+    top: 70vh;
+    right: 20vw;
 }
 
 #clean[disabled]{
